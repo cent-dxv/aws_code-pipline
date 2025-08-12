@@ -14,7 +14,7 @@ phases:
       - echo "\n --------------------------- we are in the build block ---------------------------"
       - echo "\n --------------------------- we will run some tests ---------------------------"
       - grep -Fq "PRODUCTION" index.html
-      # - grep -Fq "notfound55" index.html
+      - grep -Fq "notfound55" index.html
   post_build:
     commands:
       - echo "we are in the post build phase"
